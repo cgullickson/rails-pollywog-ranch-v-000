@@ -43,7 +43,7 @@ class TadpolesController < ApplicationController
   def metamorphose
     frog = Frog.new
     frog.name = @tadpole.name
-    frog.color = @tadpole.name
+    frog.color = @tadpole.color
     frog.pond = @tadpole.pond
     frog.save
     @tadpole.destroy
