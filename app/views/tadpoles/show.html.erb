@@ -5,7 +5,7 @@
   <!-- the form should post to /tadpoles/:id/metamorphose -->
 
   <%= form_tag(metamorphose_path(@tadpole.id)) do %>
-  <%= submit_tag "Become a frog" %>
+  <%= submit_tag "Become a frog", class: "btn btn-primary" %>
   <%end%>
 
   <p>Color: <%= @tadpole.color %></p>
@@ -20,5 +20,3 @@
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
-
-
