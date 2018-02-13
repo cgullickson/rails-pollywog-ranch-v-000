@@ -1,5 +1,5 @@
 class Tadpole < ActiveRecord::Base
-  belongs_to :frogs
-  belongs_to :ponds, through: :frogs
+  belongs_to :frog
+  belongs_to :pond, through: :frog
   # code goes here
 end
